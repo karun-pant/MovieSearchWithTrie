@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailsHeader" customModule="BMSAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="63"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="170-sa-VNd">
+                    <rect key="frame" x="254" y="0.0" width="100" height="63"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="zbQ-xF-l2I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                    <state key="normal" title="SEE ALL">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="zkk-aw-Tqb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuS-4j-8AV">
+                    <rect key="frame" x="10" y="0.0" width="234" height="63"/>
+                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.74509803919999995" green="0.18039215689999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FuS-4j-8AV" secondAttribute="bottom" id="1vH-e0-T4J"/>
+                <constraint firstItem="FuS-4j-8AV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CXz-Lc-bDk"/>
+                <constraint firstItem="170-sa-VNd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="T76-yu-6KB"/>
+                <constraint firstItem="170-sa-VNd" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="pyh-mS-ZNl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="170-sa-VNd" secondAttribute="trailing" constant="10" id="unU-es-n66"/>
+                <constraint firstItem="170-sa-VNd" firstAttribute="leading" secondItem="FuS-4j-8AV" secondAttribute="trailing" constant="10" id="v8t-en-HCe"/>
+                <constraint firstItem="170-sa-VNd" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="x1I-WI-YOw"/>
+                <constraint firstItem="FuS-4j-8AV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="xYw-7s-tG6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnAction" destination="170-sa-VNd" id="ztn-iM-THR"/>
+                <outlet property="lblHeaderTitle" destination="FuS-4j-8AV" id="4E4-Rs-8xh"/>
+            </connections>
+            <point key="canvasLocation" x="36.799999999999997" y="136.28185907046478"/>
+        </view>
+    </objects>
+</document>

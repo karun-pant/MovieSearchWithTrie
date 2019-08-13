@@ -1,0 +1,6 @@
+framework module Nikka {
+  umbrella header "Nikka-umbrella.h"
+
+  export *
+  module * { export * }
+}

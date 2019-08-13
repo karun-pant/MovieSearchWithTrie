@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-MovieSearchWithTrie/Pods-MovieSearchWithTrie-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/Nikka/Nikka.framework
